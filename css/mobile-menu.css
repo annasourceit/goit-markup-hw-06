@@ -1,4 +1,4 @@
-.mobilemenu {
+.mobile-menu {
     padding: 72px 0 40px;
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.mobilemenu.is-open {
+.mobile-menu.is-open {
     transform: translateX(0);
 }
 
@@ -97,14 +97,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      color: #404BBF;
  }
 
-.mobilemenu .list-social {
+.mobile-menu .list-social {
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 40px;
 }
 @media only screen and (min-width: 768px) {
-    .mobilemenu {
+    .mobile-menu {
         display: none;
     }
 }

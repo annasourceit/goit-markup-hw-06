@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 496px;
     margin: 0 auto;    
 }
 
@@ -54,6 +54,7 @@
 @media only screen and (min-width: 768px) {
     .hero{
         padding: 112px 0;
+        max-width: 768px;
         background-image: 
             linear-gradient(to bottom, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
             image-set(
@@ -75,6 +76,7 @@
 @media only screen and (min-width: 1158px) {
     .hero{
         padding: 188px 0;
+        max-width: 1440px;
         background-image: 
             linear-gradient(to bottom, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
             image-set(

@@ -28,7 +28,7 @@
     gap: 16px;
     position: relative;
     border-radius: 4px;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 16px;
     width: 288px;
     max-width: 408px;
     overflow-y: auto;
@@ -214,4 +214,10 @@ body:has(.modal-overlay.is-open) {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
    background-color: #404bbf;
+}
+@media only screen and (min-width: 768px) {
+    .modal{
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
 }
