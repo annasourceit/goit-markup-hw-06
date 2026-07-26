@@ -1,0 +1,110 @@
+.mobilemenu {
+    padding: 72px 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: #fff;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.mobilemenu.is-open {
+    transform: translateX(0);
+}
+
+.mobilemenu-btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.mobilemenu-btn-icon {
+    fill: currentColor;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobilemenu-btn-close:hover,
+.mobilemenu-btn-close:focus {
+    background-color: #404bbf;
+    border-color: #404bbf;
+}
+
+.mobilemenu-btn-close:hover .mobilemenu-btn-icon,
+.mobilemenu-btn-close:focus .mobilemenu-btn-icon {
+    color: #fff;
+}
+
+.mobilemenu-nav-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.mobilemenu-nav-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobilemenu-nav-item.current {
+    color: #404BBF;
+}
+
+.mobilemenu-address-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 48px;   
+}
+
+.mobilemenu-address-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #434455;
+}
+
+.mobilemenu-address-link {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ .mobilemenu-nav-link:hover,
+ .mobilemenu-nav-link:focus,
+ .mobilemenu-nav-link.current,
+ .mobilemenu-address-link:hover,
+ .mobilemenu-address-link:focus {
+     color: #404BBF;
+ }
+
+.mobilemenu .list-social {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+@media only screen and (min-width: 768px) {
+    .mobilemenu {
+        display: none;
+    }
+}

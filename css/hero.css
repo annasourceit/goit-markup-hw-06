@@ -1,0 +1,88 @@
+.hero {
+    background-color: #2E2F42;
+    padding: 72px 0;
+    background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+        image-set(
+            url(../images/hero-bg_mob@1x.jpg) 1x,
+            url(../images/hero-bg_mob@2x.jpg) 2x
+        ); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;    
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.hero-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 52px 72px 52px;
+}
+
+.hero-btn {
+    margin: 0 auto;
+    background-color: #4D5AE5;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    line-height: 1.5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero{
+        padding: 112px 0;
+        background-image: 
+            linear-gradient(to bottom, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+            image-set(
+                url(../images/hero-bg_tab@1x.jpg) 1x,
+                url(../images/hero-bg_tab@2x.jpg) 2x
+                );
+    }
+    .hero-header {
+        font-size: 56px;
+        line-height: 1.07;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        margin: 0 auto 36px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero{
+        padding: 188px 0;
+        background-image: 
+            linear-gradient(to bottom, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+            image-set(
+                url(../images/hero-bg_desk@1x.jpg) 1x,
+                url(../images/hero-bg_desk@2x.jpg) 2x
+                );
+    }
+    .hero-header {
+        margin: 0 auto 48px;
+    }
+}
