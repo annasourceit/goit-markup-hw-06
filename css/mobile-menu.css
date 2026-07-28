@@ -9,8 +9,17 @@
     background-color: #fff;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+.mobile-menu .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+}
 .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     transform: translateX(0);
 }
 
@@ -71,6 +80,10 @@
     color: #404BBF;
 }
 
+.mobilemenu-contacts{
+
+}
+
 .mobilemenu-address-list {
     flex-direction: column;
     align-items: flex-start;
@@ -83,6 +96,9 @@
     font-size: 20px;
     line-height: 1.2;
     color: #434455;
+}
+.mobilemenu-address-item.current {
+    color: #404BBF;
 }
 
 .mobilemenu-address-link {
