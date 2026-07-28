@@ -28,6 +28,7 @@
     margin: 0 auto;
 }
 .footer .list-social {
+    display: flex;
     align-items: center;
     gap: 16px;
 }
